@@ -4,43 +4,40 @@
   <meta charset="UTF-8">
   <title></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Librería de p5.js -->
+  <!-- Librería p5.js desde CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
-
-  <!-- Estilos opcionales -->
+  <!-- Estilos -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Tu sketch principal -->
+  <!-- Tu pieza interactiva, sketch.js -->
   <script src="sketch.js"></script>
 
   <script>
-    // Rutas de las 12 piezas (excluyendo la tuya, que es index)
+    // Lista de piezas de las 12 artistas restantes (tu pieza es sketch.js desde este index.html)
     const pieces = [
-      'modules/etel_adnan.html',
-      'modules/rosalia_de_castro.html',
-      'modules/cristina_garcia_rodero.html',
-      'modules/laurie_anderson.html',
-      'modules/valie_export.html',
-      'modules/joan_jonas.html',
-      'modules/hito_steyerl.html',
-      'modules/anna_ridler.html',
-      'modules/heather_dewey-hagborg.html',
-      'modules/julie_freeman.html',
-      'modules/tacita_dean.html',
-      'modules/karen_palacio.html'
-      'modules/monica_gomez.html'
+      'etel_adnan.html',
+      'rosalia_de_castro.html',
+      'cristina_garcia_rodero.html',
+      'laurie_anderson.html',
+      'valie_export.html',
+      'joan_jonas.html',
+      'hito_steyerl.html',
+      'anna_ridler.html',
+      'heather_dewey-hagborg.html',
+      'julie_freeman.html',
+      'tacita_dean.html',
+      'karen_palacio.html'
     ];
 
     let interaction = false;
 
-    // Detectar interacción del usuario
-    ['mousemove', 'mousedown', 'touchstart', 'keydown'].forEach(event => {
-      window.addEventListener(event, () => interaction = true);
-    });
+    // Marcar si el usuario interactúa
+    ['mousemove', 'mousedown', 'touchstart', 'keydown'].forEach(event =>
+      window.addEventListener(event, () => interaction = true)
+    );
 
-    // Redirección automática a los 13 segundos si no hay interacción
+    // Redirigir aleatoriamente si no hay interacción en 13 segundos
     setTimeout(() => {
       if (!interaction) {
         const randomIndex = Math.floor(Math.random() * pieces.length);

@@ -1,33 +1,51 @@
-<script>
-  // Ahora con ruta a /modules/
-  const pieces = [
-    'modules/etel_adnan.html',
-    'modules/rosalia_de_castro.html',
-    'modules/cristina_garcia_rodero.html',
-    'modules/laurie_anderson.html',
-    'modules/valie_export.html',
-    'modules/joan_jonas.html',
-    'modules/hito_steyerl.html',
-    'modules/anna_ridler.html',
-    'modules/heather_dewey-hagborg.html',
-    'modules/julie_freeman.html',
-    'modules/tacita_dean.html',
-    'modules/karen_palacio.html'
-  ];
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  let interaction = false;
+  <!-- Librería de p5.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
 
-  window.addEventListener('mousemove', () => interaction = true);
-  window.addEventListener('mousedown', () => interaction = true);
-  window.addEventListener('touchstart', () => interaction = true);
-  window.addEventListener('keydown', () => interaction = true);
+  <!-- Estilos opcionales -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Tu sketch principal -->
+  <script src="sketch.js"></script>
 
-  function redirectToRandomPiece() {
-    if (!interaction) {
-      const randomIndex = Math.floor(Math.random() * pieces.length);
-      window.location.href = pieces[randomIndex];
-    }
-  }
+  <script>
+    // Rutas de las 12 piezas (excluyendo la tuya, que es index)
+    const pieces = [
+      'modules/etel_adnan.html',
+      'modules/rosalia_de_castro.html',
+      'modules/cristina_garcia_rodero.html',
+      'modules/laurie_anderson.html',
+      'modules/valie_export.html',
+      'modules/joan_jonas.html',
+      'modules/hito_steyerl.html',
+      'modules/anna_ridler.html',
+      'modules/heather_dewey-hagborg.html',
+      'modules/julie_freeman.html',
+      'modules/tacita_dean.html',
+      'modules/karen_palacio.html'
+    ];
 
-  setTimeout(redirectToRandomPiece, 13000);
-</script>
+    let interaction = false;
+
+    // Detectar interacción del usuario
+    ['mousemove', 'mousedown', 'touchstart', 'keydown'].forEach(event => {
+      window.addEventListener(event, () => interaction = true);
+    });
+
+    // Redirección automática a los 13 segundos si no hay interacción
+    setTimeout(() => {
+      if (!interaction) {
+        const randomIndex = Math.floor(Math.random() * pieces.length);
+        window.location.href = pieces[randomIndex];
+      }
+    }, 13000);
+  </script>
+</body>
+</html>

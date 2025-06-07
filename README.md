@@ -52,8 +52,9 @@ Cuestiones como el arte femenino o la apropiación cultural se abordan como part
 
 ## 🌐 Explorar la obra
 
-👉 [Ver la obra en GitHub Pages](https://m0n1c4g0m3z.github.io/identidad_en_transito/)
+👉 [Ver la obra en GitHub Pages https://m0n1c4g0m3z.github.io/identidad-en-transito/index.html
 
 ---
 
-## 📂 Estructura del repositorio
+
+

@@ -1,6 +1,24 @@
+
+let artistPages = [
+  "modules/anna_ridler.html",
+  "modules/cristina_garcia_rodero.html",
+  "modules/etel_adnan.html",
+  "modules/heather_dewey_hagborg.html",
+  "modules/hito_steyerl.html",
+  "modules/joan_jonas.html",
+  "modules/julie_freeman.html",
+  "modules/karen_palacio.html",
+  "modules/laurie_anderson.html",
+  "modules/monica_gomez.html",
+  "modules/rosalia_de_castro.html",
+  "modules/tacita_dean.html",
+  "modules/valie_export.html"
+];
+
 let papers = [];
 let numPapers = 13;
 let groupRotation = 0;
+let lastInteractionTime = 0;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -9,41 +27,48 @@ function setup() {
   for (let i = 0; i < numPapers; i++) {
     papers.push(new Paper(i));
   }
-}
 
-function draw() {
-  background(0); // Negro profundo y uniforme
-
-  // Rotar el grupo completo desde el centro
-  translate(width / 2, height / 2);
-  rotate(groupRotation);
-  translate(-width / 2, -height / 2);
-  groupRotation += 0.001;
-
-  // Opcional: conexión sutil entre papeles
-  stroke(255, 10); // muy tenue
-  for (let i = 0; i < papers.length; i++) {
-    for (let j = i + 1; j < papers.length; j++) {
-      let a = papers[i];
-      let b = papers[j];
-      line(a.x, a.y, b.x, b.y);
+  // Cambio automático cada 13 segundos si no hay interacción
+  setInterval(() => {
+    let elapsed = millis() - lastInteractionTime;
+    if (elapsed > 13000) {
+      let index = floor(random(artistPages.length));
+      window.location.href = artistPages[index];
     }
-  }
-
-  noStroke();
-  for (let paper of papers) {
-    paper.update();
-    paper.display();
-  }
+  }, 13000);
 }
 
 function mousePressed() {
+  lastInteractionTime = millis();
   for (let paper of papers) {
     if (paper.isMouseOver()) {
-      print("Haz hecho click en el papel " + paper.index);
+      let targetURL = artistPages[paper.index];
+      window.location.href = targetURL;
+      break;
     }
   }
 }
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
+
+
+let papers = [];
+let numPapers = 13;
+let groupRotation = 0;
+
+ {
+  for (let paper of papers) {
+    if (paper.isMouseOver()) {
+      let targetURL = artistPages[paper.index];
+      window.location.href = targetURL;
+      break;
+    }
+  }
+}
+
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);

@@ -14,5 +14,41 @@
 <body>
   <!-- Tu pieza interactiva -->
   <script src="sketch.js"></script>
+  <script>
+  // Lista de archivos HTML de las 12 artistas (sin incluir la tuya: index.html)
+  const pieces = [
+    'etel.html',
+    'rosalia.html',
+    'cristina.html',
+    'laurie.html',
+    'valie.html',
+    'joan.html',
+    'hito.html',
+    'anna.html',
+    'heather.html',
+    'julie.html',
+    'tacita.html',
+    'karen.html'
+  ];
+
+  let interaction = false;
+
+  // Detectar si el usuario interactúa
+  window.addEventListener('mousemove', () => interaction = true);
+  window.addEventListener('mousedown', () => interaction = true);
+  window.addEventListener('touchstart', () => interaction = true);
+  window.addEventListener('keydown', () => interaction = true);
+
+  // Función para redirigir aleatoriamente
+  function redirectToRandomPiece() {
+    if (!interaction) {
+      const randomIndex = Math.floor(Math.random() * pieces.length);
+      window.location.href = pieces[randomIndex];
+    }
+  }
+
+  // Esperar 13 segundos y luego redirigir si no hay interacción
+  setTimeout(redirectToRandomPiece, 13000);
+</script>
 </body>
 </html>

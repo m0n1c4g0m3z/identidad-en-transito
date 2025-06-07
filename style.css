@@ -1,8 +1,12 @@
-body {
+/* Elimina bordes, márgenes y scroll */
+html, body {
   margin: 0;
   padding: 0;
+  background: black;
   overflow: hidden;
-  background-color: black;
-  color: white;
-  font-family: Helvetica, sans-serif;
+}
+
+/* El canvas ocupará toda la pantalla sin dejar espacios */
+canvas {
+  display: block;
 }

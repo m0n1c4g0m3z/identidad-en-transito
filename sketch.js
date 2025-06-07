@@ -1,24 +1,6 @@
-
-  let papers = [];
+let papers = [];
 let numPapers = 13;
 let groupRotation = 0;
-
-let pieces = [
-  'modules/etel_adnan.html',
-  'modules/rosalia_de_castro.html',
-  'modules/cristina_garcia_rodero.html',
-  'modules/laurie_anderson.html',
-  'modules/valie_export.html',
-  'modules/joan_jonas.html',
-  'modules/hito_steyerl.html',
-  'modules/anna_ridler.html',
-  'modules/heather_dewey-hagborg.html',
-  'modules/julie_freeman.html',
-  'modules/tacita_dean.html',
-  'modules/karen_palacio.html'
-];
-
-let interaction = false;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -27,26 +9,16 @@ function setup() {
   for (let i = 0; i < numPapers; i++) {
     papers.push(new Paper(i));
   }
-
-  // Iniciar temporizador de 13 segundos
-  setTimeout(redirectToRandomPiece, 13000);
-
-  // Escuchas de interacción
-  window.addEventListener('mousemove', () => interaction = true);
-  window.addEventListener('mousedown', () => interaction = true);
-  window.addEventListener('touchstart', () => interaction = true);
-  window.addEventListener('keydown', () => interaction = true);
 }
 
 function draw() {
-  background(0); // Negro profundo y uniforme
-
+  background(0); // negro profundo
   translate(width / 2, height / 2);
   rotate(groupRotation);
   translate(-width / 2, -height / 2);
   groupRotation += 0.001;
 
-  stroke(255, 10); // Conexiones sutiles
+  stroke(255, 10);
   for (let i = 0; i < papers.length; i++) {
     for (let j = i + 1; j < papers.length; j++) {
       let a = papers[i];
@@ -65,7 +37,11 @@ function draw() {
 function mousePressed() {
   for (let paper of papers) {
     if (paper.isMouseOver()) {
-      print("Haz hecho click en el papel " + paper.index);
+      if (paper.index < 12 && window.artistLinks) {
+        window.location.href = window.artistLinks[paper.index];
+      } else {
+        console.log("Este es el papel 13 (pieza propia).");
+      }
     }
   }
 }
@@ -74,14 +50,6 @@ function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
 
-function redirectToRandomPiece() {
-  if (!interaction) {
-    const randomIndex = floor(random(pieces.length));
-    window.location.href = pieces[randomIndex];
-  }
-}
-
-// Clase Paper
 class Paper {
   constructor(index) {
     this.index = index;
@@ -99,9 +67,7 @@ class Paper {
     for (let i = 0; i < steps; i++) {
       let angle = map(i, 0, steps, 0, TWO_PI);
       let radius = this.r + random(-15, 15);
-      let x = cos(angle) * radius;
-      let y = sin(angle) * radius;
-      points.push(createVector(x, y));
+      points.push(createVector(cos(angle) * radius, sin(angle) * radius));
     }
     return points;
   }

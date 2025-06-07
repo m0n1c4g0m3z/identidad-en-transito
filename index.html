@@ -2,17 +2,15 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <script src="sketch.js"></script>
-
   <script>
-    // Rutas de las 12 obras de otras artistas
-    const artistLinks = [
+    const piezas = [
       'etel_adnan.html',
       'rosalia_de_castro.html',
       'cristina_garcia_rodero.html',
@@ -21,29 +19,25 @@
       'joan_jonas.html',
       'hito_steyerl.html',
       'anna_ridler.html',
-      'heather_dewey-hagborg.html',
+      'heather_dewey_hagborg.html',
       'julie_freeman.html',
       'tacita_dean.html',
-      'karen_palacio.html'
+      'karen_palacio.html',
+      'index.html' // tu propia pieza, como entrada y módulo 13
     ];
 
-    let interaction = false;
+    let interaccion = false;
+    window.addEventListener('mousemove', () => interaccion = true);
+    window.addEventListener('mousedown', () => interaccion = true);
+    window.addEventListener('touchstart', () => interaccion = true);
+    window.addEventListener('keydown', () => interaccion = true);
 
-    // Detectar interacción del usuario
-    ['mousemove', 'mousedown', 'keydown', 'touchstart'].forEach(evt =>
-      window.addEventListener(evt, () => interaction = true)
-    );
-
-    // Si no hay interacción en 13 segundos, redirigir aleatoriamente
     setTimeout(() => {
-      if (!interaction) {
-        const r = Math.floor(Math.random() * artistLinks.length);
-        window.location.href = artistLinks[r];
+      if (!interaccion) {
+        const aleatorio = Math.floor(Math.random() * 13);
+        window.location.href = piezas[aleatorio];
       }
     }, 13000);
-
-    // Permitir que sketch.js acceda a los links
-    window.artistLinks = artistLinks;
   </script>
 </body>
 </html>

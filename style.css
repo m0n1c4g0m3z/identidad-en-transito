@@ -1,12 +1,13 @@
-/* Elimina bordes, márgenes y scroll */
+/* Elimina márgenes y scroll para que el fondo ocupe todo */
 html, body {
   margin: 0;
   padding: 0;
   background: black;
   overflow: hidden;
+  height: 100%;
 }
 
-/* El canvas ocupará toda la pantalla sin dejar espacios */
+/* Asegura que el canvas o cualquier elemento ocupe toda la ventana sin bordes */
 canvas {
   display: block;
 }

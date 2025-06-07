@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title></title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Librería p5.js desde CDN -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
-  <!-- Estilos -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Tu pieza interactiva, sketch.js -->
   <script src="sketch.js"></script>
 
   <script>
-    // Lista de piezas de las 12 artistas restantes (tu pieza es sketch.js desde este index.html)
-    const pieces = [
+    // Rutas de las 12 obras de otras artistas
+    const artistLinks = [
       'etel_adnan.html',
       'rosalia_de_castro.html',
       'cristina_garcia_rodero.html',
@@ -32,18 +29,21 @@
 
     let interaction = false;
 
-    // Marcar si el usuario interactúa
-    ['mousemove', 'mousedown', 'touchstart', 'keydown'].forEach(event =>
-      window.addEventListener(event, () => interaction = true)
+    // Detectar interacción del usuario
+    ['mousemove', 'mousedown', 'keydown', 'touchstart'].forEach(evt =>
+      window.addEventListener(evt, () => interaction = true)
     );
 
-    // Redirigir aleatoriamente si no hay interacción en 13 segundos
+    // Si no hay interacción en 13 segundos, redirigir aleatoriamente
     setTimeout(() => {
       if (!interaction) {
-        const randomIndex = Math.floor(Math.random() * pieces.length);
-        window.location.href = pieces[randomIndex];
+        const r = Math.floor(Math.random() * artistLinks.length);
+        window.location.href = artistLinks[r];
       }
     }, 13000);
+
+    // Permitir que sketch.js acceda a los links
+    window.artistLinks = artistLinks;
   </script>
 </body>
 </html>

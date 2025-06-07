@@ -1,45 +1,27 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title></title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- p5.js desde CDN -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
-
-  <!-- Estilo opcional -->
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Tu pieza interactiva -->
-  <script src="sketch.js"></script>
-  <script>
-  // Lista de archivos HTML de las 12 artistas (sin incluir la tuya: index.html)
+<script>
+  // Ahora con ruta a /modules/
   const pieces = [
-    'etel.html',
-    'rosalia.html',
-    'cristina.html',
-    'laurie.html',
-    'valie.html',
-    'joan.html',
-    'hito.html',
-    'anna.html',
-    'heather.html',
-    'julie.html',
-    'tacita.html',
-    'karen.html'
+    'modules/etel_adnan.html',
+    'modules/rosalia_de_castro.html',
+    'modules/cristina_garcia_rodero.html',
+    'modules/laurie_anderson.html',
+    'modules/valie_export.html',
+    'modules/joan_jonas.html',
+    'modules/hito_steyerl.html',
+    'modules/anna_ridler.html',
+    'modules/heather_dewey-hagborg.html',
+    'modules/julie_freeman.html',
+    'modules/tacita_dean.html',
+    'modules/karen_palacio.html'
   ];
 
   let interaction = false;
 
-  // Detectar si el usuario interactúa
   window.addEventListener('mousemove', () => interaction = true);
   window.addEventListener('mousedown', () => interaction = true);
   window.addEventListener('touchstart', () => interaction = true);
   window.addEventListener('keydown', () => interaction = true);
 
-  // Función para redirigir aleatoriamente
   function redirectToRandomPiece() {
     if (!interaction) {
       const randomIndex = Math.floor(Math.random() * pieces.length);
@@ -47,8 +29,5 @@
     }
   }
 
-  // Esperar 13 segundos y luego redirigir si no hay interacción
   setTimeout(redirectToRandomPiece, 13000);
 </script>
-</body>
-</html>

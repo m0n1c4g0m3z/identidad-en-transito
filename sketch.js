@@ -2,6 +2,22 @@ let papers = [];
 let numPapers = 13;
 let groupRotation = 0;
 
+const enlaces = [
+  "etel_adnan.html",
+  "rosalia_de_castro.html",
+  "cristina_garcia_rodero.html",
+  "laurie_anderson.html",
+  "valie_export.html",
+  "joan_jonas.html",
+  "hito_steyerl.html",
+  "anna_ridler.html",
+  "heather_dewey_hagborg.html",
+  "julie_freeman.html",
+  "tacita_dean.html",
+  "karen_palacio.html",
+  "index.html" // tú misma
+];
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
   angleMode(RADIANS);
@@ -12,7 +28,7 @@ function setup() {
 }
 
 function draw() {
-  background(0); // negro profundo
+  background(0);
   translate(width / 2, height / 2);
   rotate(groupRotation);
   translate(-width / 2, -height / 2);
@@ -37,11 +53,8 @@ function draw() {
 function mousePressed() {
   for (let paper of papers) {
     if (paper.isMouseOver()) {
-      if (paper.index < 12 && window.artistLinks) {
-        window.location.href = window.artistLinks[paper.index];
-      } else {
-        console.log("Este es el papel 13 (pieza propia).");
-      }
+      const destino = enlaces[paper.index];
+      window.location.href = destino;
     }
   }
 }
@@ -67,7 +80,9 @@ class Paper {
     for (let i = 0; i < steps; i++) {
       let angle = map(i, 0, steps, 0, TWO_PI);
       let radius = this.r + random(-15, 15);
-      points.push(createVector(cos(angle) * radius, sin(angle) * radius));
+      let x = cos(angle) * radius;
+      let y = sin(angle) * radius;
+      points.push(createVector(x, y));
     }
     return points;
   }

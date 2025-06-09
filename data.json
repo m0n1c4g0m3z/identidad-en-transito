@@ -1,0 +1,26 @@
+
+{
+  "artistas": [
+    {
+      "nombre": "Joan Jonas",
+      "color": "#ff00ff",
+      "forma": "circulo",
+      "movimiento": "ondas",
+      "intensidad": 2
+    },
+    {
+      "nombre": "Valie Export",
+      "color": "#00ffff",
+      "forma": "cuadrado",
+      "movimiento": "saltos",
+      "intensidad": 4
+    },
+    {
+      "nombre": "Heather Dewey-Hagborg",
+      "color": "#ffff00",
+      "forma": "linea",
+      "movimiento": "aleatorio",
+      "intensidad": 3
+    }
+  ]
+}

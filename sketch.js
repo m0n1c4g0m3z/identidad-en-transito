@@ -22,7 +22,7 @@ function draw() {
     for (let i = 0; i < props.count; i++) {
       let x = random(width);
       let y = random(height);
-      let s = random(props.size[0], props.size[1]);
+      let s = props.size;
 
       // Según la forma
       if (props.form === "circle") {
@@ -40,10 +40,9 @@ function draw() {
     }
   }
 }
-
 function keyPressed() {
-  let entry = findAuthorByKey(key.toLowerCase());
-  if (entry) {
-    currentEntry = entry;
+  let keyLower = key.toLowerCase(); // convierte la tecla presionada a minúscula
+  if (data[keyLower]) {
+    currentKey = keyLower; // usa la clave minúscula para acceder a los datos
   }
 }

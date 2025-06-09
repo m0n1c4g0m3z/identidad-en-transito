@@ -3,7 +3,7 @@ let currentKey = null;
 
 function preload() {
   // Cargar el JSON con la información de las autoras
-  data = loadJSON("demo_data.json");
+  data = loadJSON("demo.json");
 }
 
 function setup() {

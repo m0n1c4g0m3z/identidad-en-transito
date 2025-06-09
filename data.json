@@ -1,26 +1,13 @@
-
 {
   "artistas": [
     {
-      "nombre": "Joan Jonas",
-      "color": "#ff00ff",
-      "forma": "circulo",
-      "movimiento": "ondas",
-      "intensidad": 2
+      "nombre": "Joan Jonas"
     },
     {
-      "nombre": "Valie Export",
-      "color": "#00ffff",
-      "forma": "cuadrado",
-      "movimiento": "saltos",
-      "intensidad": 4
+      "nombre": "Valie Export"
     },
     {
-      "nombre": "Heather Dewey-Hagborg",
-      "color": "#ffff00",
-      "forma": "linea",
-      "movimiento": "aleatorio",
-      "intensidad": 3
+      "nombre": "Etel Adnan"
     }
   ]
 }

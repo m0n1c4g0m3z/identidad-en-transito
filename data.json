@@ -1,13 +1,132 @@
 {
-  "artistas": [
-    {
-      "nombre": "Joan Jonas"
-    },
-    {
-      "nombre": "Valie Export"
-    },
-    {
-      "nombre": "Etel Adnan"
-    }
-  ]
+  "a": {
+    "nombre": "Valie Export",
+    "forma": "circle",
+    "color": [
+      255,
+      0,
+      0
+    ],
+    "cantidad": 39
+  },
+  "b": {
+    "nombre": "Joan Jonas",
+    "forma": "triangle",
+    "color": [
+      200,
+      100,
+      255
+    ],
+    "cantidad": 37
+  },
+  "c": {
+    "nombre": "Etel Adnan",
+    "forma": "rect",
+    "color": [
+      255,
+      200,
+      0
+    ],
+    "cantidad": 21
+  },
+  "d": {
+    "nombre": "Cristina Garc\u00eda Rodero",
+    "forma": "ellipse",
+    "color": [
+      180,
+      255,
+      100
+    ],
+    "cantidad": 32
+  },
+  "e": {
+    "nombre": "Heather Dewey-Hagborg",
+    "forma": "line",
+    "color": [
+      100,
+      255,
+      255
+    ],
+    "cantidad": 15
+  },
+  "f": {
+    "nombre": "Anna Ridler",
+    "forma": "arc",
+    "color": [
+      255,
+      150,
+      200
+    ],
+    "cantidad": 19
+  },
+  "g": {
+    "nombre": "Hito Steyerl",
+    "forma": "quad",
+    "color": [
+      100,
+      100,
+      255
+    ],
+    "cantidad": 15
+  },
+  "h": {
+    "nombre": "Karen Palacio",
+    "forma": "bezier",
+    "color": [
+      255,
+      100,
+      150
+    ],
+    "cantidad": 17
+  },
+  "i": {
+    "nombre": "Tacita Dean",
+    "forma": "point",
+    "color": [
+      200,
+      200,
+      200
+    ],
+    "cantidad": 19
+  },
+  "j": {
+    "nombre": "Julie Freeman",
+    "forma": "curve",
+    "color": [
+      150,
+      255,
+      150
+    ],
+    "cantidad": 31
+  },
+  "k": {
+    "nombre": "Laurie Anderson",
+    "forma": "rect",
+    "color": [
+      100,
+      255,
+      100
+    ],
+    "cantidad": 29
+  },
+  "l": {
+    "nombre": "Rosal\u00eda de Castro",
+    "forma": "circle",
+    "color": [
+      255,
+      255,
+      100
+    ],
+    "cantidad": 34
+  },
+  "m": {
+    "nombre": "M\u00f3nica G\u00f3mez",
+    "forma": "triangle",
+    "color": [
+      255,
+      0,
+      255
+    ],
+    "cantidad": 33
+  }
 }

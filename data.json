@@ -1,171 +1,93 @@
-[
-    {
-        "key": "a",
-        "name": "Anna Ridler",
-        "shape": "circle",
-        "motion": "linear",
-        "color": [
-            135,
-            195,
-            120
-        ],
-        "size": 43,
-        "speed": 1.66
-    },
-    {
-        "key": "b",
-        "name": "Heather Dewey-Hagborg",
-        "shape": "square",
-        "motion": "circular",
-        "color": [
-            192,
-            100,
-            199
-        ],
-        "size": 68,
-        "speed": 1.22
-    },
-    {
-        "key": "c",
-        "name": "Karen Palacio",
-        "shape": "triangle",
-        "motion": "oscillate",
-        "color": [
-            195,
-            224,
-            242
-        ],
-        "size": 53,
-        "speed": 1.59
-    },
-    {
-        "key": "d",
-        "name": "Laurie Anderson",
-        "shape": "line",
-        "motion": "random",
-        "color": [
-            172,
-            190,
-            128
-        ],
-        "size": 34,
-        "speed": 2.17
-    },
-    {
-        "key": "e",
-        "name": "Julie Freeman",
-        "shape": "ellipse",
-        "motion": "expand",
-        "color": [
-            228,
-            245,
-            149
-        ],
-        "size": 74,
-        "speed": 0.52
-    },
-    {
-        "key": "f",
-        "name": "Cristina Garc\u00eda Rodero",
-        "shape": "arc",
-        "motion": "contract",
-        "color": [
-            161,
-            203,
-            134
-        ],
-        "size": 44,
-        "speed": 2.34
-    },
-    {
-        "key": "g",
-        "name": "Rosal\u00eda de Castro",
-        "shape": "star",
-        "motion": "spiral",
-        "color": [
-            156,
-            167,
-            180
-        ],
-        "size": 79,
-        "speed": 1.86
-    },
-    {
-        "key": "h",
-        "name": "Valie Export",
-        "shape": "cross",
-        "motion": "float",
-        "color": [
-            239,
-            115,
-            189
-        ],
-        "size": 55,
-        "speed": 1.59
-    },
-    {
-        "key": "i",
-        "name": "Tacita Dean",
-        "shape": "wave",
-        "motion": "bounce",
-        "color": [
-            254,
-            179,
-            228
-        ],
-        "size": 46,
-        "speed": 2.6
-    },
-    {
-        "key": "j",
-        "name": "Etel Adnan",
-        "shape": "spiral",
-        "motion": "pulse",
-        "color": [
-            233,
-            153,
-            243
-        ],
-        "size": 48,
-        "speed": 0.97
-    },
-    {
-        "key": "k",
-        "name": "Joan Jonas",
-        "shape": "dot",
-        "motion": "glitch",
-        "color": [
-            121,
-            128,
-            129
-        ],
-        "size": 61,
-        "speed": 2.38
-    },
-    {
-        "key": "l",
-        "name": "Hito Steyerl",
-        "shape": "blob",
-        "motion": "flow",
-        "color": [
-            140,
-            186,
-            194
-        ],
-        "size": 66,
-        "speed": 2.65
-    },
-    {
-        "key": "m",
-        "name": "M\u00f3nica G\u00f3mez",
-        "shape": "hexagon",
-        "motion": "rotate",
-        "color": [
-            122,
-            136,
-            228
-        ],
-        "size": 46,
-        "speed": 2.48
-    }
-]
+{
+  "a": {
+    "name": "Anna Ridler",
+    "form": "circle",
+    "color": [135, 195, 120],
+    "size": [20, 50],
+    "count": 25
+  },
+  "b": {
+    "name": "Heather Dewey-Hagborg",
+    "form": "square",
+    "color": [192, 100, 199],
+    "size": [15, 45],
+    "count": 30
+  },
+  "c": {
+    "name": "Karen Palacio",
+    "form": "triangle",
+    "color": [195, 224, 242],
+    "size": [10, 40],
+    "count": 20
+  },
+  "d": {
+    "name": "Laurie Anderson",
+    "form": "line",
+    "color": [172, 190, 128],
+    "size": [5, 30],
+    "count": 40
+  },
+  "e": {
+    "name": "Julie Freeman",
+    "form": "circle",
+    "color": [228, 245, 149],
+    "size": [20, 60],
+    "count": 25
+  },
+  "f": {
+    "name": "Cristina García Rodero",
+    "form": "square",
+    "color": [161, 203, 134],
+    "size": [15, 50],
+    "count": 30
+  },
+  "g": {
+    "name": "Rosalía de Castro",
+    "form": "triangle",
+    "color": [156, 167, 180],
+    "size": [10, 35],
+    "count": 20
+  },
+  "h": {
+    "name": "Valie Export",
+    "form": "circle",
+    "color": [239, 115, 189],
+    "size": [25, 55],
+    "count": 25
+  },
+  "i": {
+    "name": "Tacita Dean",
+    "form": "square",
+    "color": [254, 179, 228],
+    "size": [10, 40],
+    "count": 35
+  },
+  "j": {
+    "name": "Etel Adnan",
+    "form": "line",
+    "color": [233, 153, 243],
+    "size": [5, 20],
+    "count": 40
+  },
+  "k": {
+    "name": "Joan Jonas",
+    "form": "triangle",
+    "color": [121, 128, 129],
+    "size": [10, 30],
+    "count": 20
+  },
+  "l": {
+    "name": "Hito Steyerl",
+    "form": "square",
+    "color": [140, 186, 194],
+    "size": [15, 35],
+    "count": 30
+  },
+  "m": {
+    "name": "Mónica Gómez",
+    "form": "circle",
+    "color": [122, 136, 228],
+    "size": [20, 50],
+    "count": 25
+  }
+}

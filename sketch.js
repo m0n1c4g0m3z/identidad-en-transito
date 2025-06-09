@@ -25,13 +25,13 @@ function draw() {
       let s = props.size;
 
       // Según la forma
-      if (props.shape === "circle") {
+      if (props.form === "circle") {
         ellipse(x, y, s);
-      } else if (props.shape === "square") {
+      } else if (props.form === "square") {
         rect(x, y, s, s);
-      } else if (props.shape === "triangle") {
+      } else if (props.form === "triangle") {
         triangle(x, y, x + s, y, x + s / 2, y - s);
-      } else if (props.shape === "line") {
+      } else if (props.form === "line"){
         stroke(props.color[0], props.color[1], props.color[2]);
         line(x, y, x + s, y + s);
         noStroke();

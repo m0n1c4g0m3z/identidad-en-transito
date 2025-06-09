@@ -1,24 +1,31 @@
-# Identidad en Tránsito
+# Identidad en Tránsito (en proceso)
 
-**Identidad en Tránsito** es un proyecto de arte generativo que explora la construcción fluida y situada de la identidad a través del código, el gesto y la interacción.
+**Identidad en Tránsito** es un proyecto en desarrollo de arte generativo interactivo que explora la identidad como proceso, desplazamiento y transformación, desde una perspectiva a/r/tográfica.
 
-Este prototipo interactivo está inspirado en prácticas artísticas y teóricas contemporáneas. A través de una interfaz visual programada en [p5.js](https://p5js.org/), permite activar representaciones gráficas vinculadas a 13 artistas mediante el teclado.
+El marco teórico se fundamenta en enfoques de investigación basada en las artes (Arts-Based Research), particularmente desde la perspectiva a/r/tográfica desarrollada por **Patricia Leavy**, en la cual se entrelazan los roles de artista, investigadora y docente. Esta práctica convierte el hacer artístico en método de pensamiento, indagación y generación de conocimiento.
 
-## Cómo funciona
+En esta línea, el desarrollo visual del proyecto está **técnicamente inspirado en el trabajo de Casey Reas y su "Process Compendium"**, que plantea un sistema visual generativo basado en instrucciones textuales que definen comportamientos gráficos. Se adopta su lógica de *Form + Behavior = Element*, traduciéndola al contexto contemporáneo y a las autoras seleccionadas.
 
-- Pulsa una tecla de la `a` a la `m` (13 en total).
-- Cada tecla representa a una artista y activa una visualización generativa basada en su enfoque estético.
-- El fondo negro mate genera un entorno en donde la identidad se activa mediante el gesto.
+Cada artista está representada como una entidad visual con propiedades únicas (forma, color, escala, movimiento), lo que activa una experiencia sensible a partir de su universo estético.
+
+## Interacción
+
+- Pulsa una tecla de la `a` a la `m` para activar la representación visual de una artista.
+- Cada configuración es única y responde visualmente al carácter de su obra.
+- El fondo negro mate actúa como superficie efímera en transformación constante.
 
 ## Tecnologías
 
-- `p5.js`
-- `HTML`, `CSS`, `JavaScript`
-- Datos estructurados en `data.json`
-- Hospedaje: GitHub Pages
+- `p5.js` (JavaScript)
+- `HTML`, `CSS`
+- Archivo de datos estructurado: `data.json`
+- Inspiración técnica: [Casey Reas – Process Compendium](https://github.com/REAS/studio/blob/master/ProcessCompendium.md)
+- Enfoque metodológico: Patricia Leavy, A/r/tografía y Arts-Based Research (ABR)
 
-## Enlace al prototipo
+## Estado actual
 
-👉 [Ver demo en vivo](https://m0n1c4g0m3z.github.io/identidad-en-transito/)
+🚧 Este proyecto se encuentra en proceso de desarrollo como parte de un Trabajo de Fin de Grado (TFG). Las funcionalidades e interfaces pueden cambiar a medida que evoluciona la investigación.
 
----
+## Demo en vivo
+
+👉 [https://m0n1c4g0m3z.github.io/identidad-en-transito/](https://m0n1c4g0m3z.github.io/identidad-en-transito/)

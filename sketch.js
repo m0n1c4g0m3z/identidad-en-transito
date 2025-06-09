@@ -42,8 +42,8 @@ function draw() {
 }
 
 function keyPressed() {
-  let keyUpper = key.toUpperCase();
-  if (data[keyUpper]) {
-    currentKey = keyUpper;
-  }
+let k = key.toLowerCase();
+if (data[k]) {
+  currentKey = k;
+}
 }

@@ -1,4 +1,4 @@
-let data;
+let data = {};
 let currentKey = null;
 
 function preload() {
@@ -14,16 +14,14 @@ function setup() {
 function draw() {
   background(0, 20);
 
-  if (data && currentKey && data[currentKey]) {
-    const props = data[currentKey];
+  if (currentKey && data[currentKey]) {
+    let props = data[currentKey];
     fill(props.color[0], props.color[1], props.color[2], 150);
 
-    for (let i = 0; i < (props.count || 10); i++) {
+    for (let i = 0; i < props.count; i++) {
       let x = random(width);
       let y = random(height);
-      let s = Array.isArray(props.size)
-        ? random(props.size[0], props.size[1])
-        : props.size;
+      let s = random(props.size[0], props.size[1]);
 
       if (props.form === "circle") {
         ellipse(x, y, s);

@@ -1,89 +1,89 @@
 {
-  "A": {
+  "a": {
     "name": "Anna Ridler",
     "form": "circle",
     "color": [135, 195, 120],
     "size": [20, 50],
     "count": 25
   },
-  "B": {
+  "b": {
     "name": "Heather Dewey-Hagborg",
     "form": "square",
     "color": [192, 100, 199],
     "size": [15, 45],
     "count": 30
   },
-  "C": {
+  "c": {
     "name": "Karen Palacio",
     "form": "triangle",
     "color": [195, 224, 242],
     "size": [10, 40],
     "count": 20
   },
-  "D": {
+  "d": {
     "name": "Laurie Anderson",
     "form": "line",
     "color": [172, 190, 128],
     "size": [5, 30],
     "count": 40
   },
-  "E": {
+  "e": {
     "name": "Julie Freeman",
     "form": "circle",
     "color": [228, 245, 149],
     "size": [20, 60],
     "count": 25
   },
-  "F": {
+  "f": {
     "name": "Cristina García Rodero",
     "form": "square",
     "color": [161, 203, 134],
     "size": [15, 50],
     "count": 30
   },
-  "G": {
+  "g": {
     "name": "Rosalía de Castro",
     "form": "triangle",
     "color": [156, 167, 180],
     "size": [10, 35],
     "count": 20
   },
-  "H": {
+  "h": {
     "name": "Valie Export",
     "form": "circle",
     "color": [239, 115, 189],
     "size": [25, 55],
     "count": 25
   },
-  "I": {
+  "i": {
     "name": "Tacita Dean",
     "form": "square",
     "color": [254, 179, 228],
     "size": [10, 40],
     "count": 35
   },
-  "J": {
+  "j": {
     "name": "Etel Adnan",
     "form": "line",
     "color": [233, 153, 243],
     "size": [5, 20],
     "count": 40
   },
-  "K": {
+  "k": {
     "name": "Joan Jonas",
     "form": "triangle",
     "color": [121, 128, 129],
     "size": [10, 30],
     "count": 20
   },
-  "L": {
+  "l": {
     "name": "Hito Steyerl",
     "form": "square",
     "color": [140, 186, 194],
     "size": [15, 35],
     "count": 30
   },
-  "M": {
+  "m": {
     "name": "Mónica Gómez",
     "form": "circle",
     "color": [122, 136, 228],

@@ -42,8 +42,8 @@ function draw() {
 }
 
 function keyPressed() {
-let k = key.toLowerCase();
-if (data[k]) {
-  currentKey = k;
-}
+  let entry = findAuthorByKey(key.toLowerCase());
+  if (entry) {
+    currentEntry = entry;
+  }
 }

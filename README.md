@@ -1,6 +1,6 @@
 # Identidad en Tránsito (en proceso)
 
-**Identidad en Tránsito** es un proyecto en desarrollo de arte generativo interactivo que explora la identidad como proceso, desplazamiento y transformación, desde una perspectiva a/r/tográfica.
+**Identidad en Tránsito** es un proyecto en desarrollo de arte generativo interactivo que explora la identidad como proceso, desplazamiento y transformación, desde una perspectiva transdisciplinar.
 
 El marco teórico se fundamenta en enfoques de investigación basada en las artes (Arts-Based Research), particularmente desde la perspectiva a/r/tográfica desarrollada por **Patricia Leavy**, en la cual se entrelazan los roles de artista, investigadora y docente. Esta práctica convierte el hacer artístico en método de pensamiento, indagación y generación de conocimiento.
 

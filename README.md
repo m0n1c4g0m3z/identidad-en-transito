@@ -7,6 +7,7 @@ El marco teórico se fundamenta en enfoques de investigación basada en las arte
 En esta línea, el desarrollo visual del proyecto está **técnicamente inspirado en el trabajo de Casey Reas y su "Process Compendium"**, que plantea un sistema visual generativo basado en instrucciones textuales que definen comportamientos gráficos. Se adopta su lógica de *Form + Behavior = Element*, traduciéndola al contexto contemporáneo y a las autoras seleccionadas.
 
 Cada artista está representada como una entidad visual con propiedades únicas (forma, color, escala, movimiento), lo que activa una experiencia sensible a partir de su universo estético.
+Como referencias y fuentes de investigación, el proyecto incorpora el trabajo de: Anna Ridler, Karen Palacio, Heather Dewey-Hagborg, Julie Freeman, Hito Steyerl, Laurie Anderson, Cristina García Rodero, Rosalía de Castro, Valie Export, Etel Adnan, Tacita Dean, Joan Jonas y yo misma.
 
 ## Interacción
 
